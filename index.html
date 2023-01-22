@@ -2,8 +2,8 @@
 <html lang="ru">
 
   <head>
-    <meta charset="UTF-8">
-    <title>Каталог</title>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -12,18 +12,18 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-logo" href="index.html">
+            <a class="navigation-logo">
               <img src="images/logo-sedona.svg" width="139" height="70" alt="Седона.">
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -43,182 +43,67 @@
         </li>
       </ul>
     </header>
-    <main class="main-inner">
-      <h1 class="inner-title">Гостиницы Седоны</h1>
-      <ol class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
-        </li>
-      </ol>
-      <section class="catalog-products">
-        <h2 class="visually-hidden">Список отелей с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="swimming-pool" checked>
-                  Бассейн
-                </label>
+
+    <main class="main-index">
+      <h1 class="visually-hidden">Добро пожаловать в прекрасную Седону</h1>
+      <img class="logo" src="images/main-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
+      <section class="welcome">
+        <h2 class="visually-hidden">Приветствие</h2>
+        <p class="welcome-heading">Седона — небольшой городок в Аризоне,
+          <br>заслуживающий большего!
+        </p>
+        <p class="welcome-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <ol class="advantages-list">
+          <li class="advantages-item">
+            <div class="advantages-item-main">
+            <h3 class="advantages-title-main">Настоящий городок</h3>
+            <p class="advantages-description-main">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="images/main-sedona.jpg" width="800" height="384" alt="Седона.">
+          </div>
+            <ul>
+              <li class="advantages-item-add">
+                <h3 class="advantages-title-add">Жильё</h3>
+                <p class="advantages-description-add">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>
-                  Парковка
-                </label>
+              <li class="advantages-item-food">
+                <h3 class="advantages-title-food">Еда</h3>
+                <p class="advantages-description-food">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="wi-fi">
-                  Wi-Fi
-                </label>
+              <li class="advantages-item-add">
+                <h3 class="advantages-title-add">Сувениры</h3>
+                <p class="advantages-description-add">Не только китайского, но и настоящего местного производства!</p>
               </li>
             </ul>
-
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип Жилья:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="accomodation" value="hotel" checked>
-                  Гостиница
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="accomodation" value="motel">
-                  Мотель
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="accomodation" value="apartment">
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <button class="button-submit" type="submit">Применить</button>
-          <button class="button-reset" type="reset">Сбросить</button>
-
-        </form>
-
-        <p class="search-results">Найдено гостиниц: 38</p>
-
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="popular">Сначала популярные</option>
-          <option value="expensieve">Сначала дорогие</option>
-        </select>
-        <ul>
-          <li>
-            <a class="button" href="#">
-              <span class="visually-hidden">Показать плиткой</span>
-            </a>
           </li>
-          <li>
-            <a href="#">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
+          <li class="advantages-item-main">
+            <h3 class="advantages-title-main">Там есть мост дьявола</h3>
+            <p class="advantages-description-main">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img src="images/main-canyon.jpg" width="800" height="384" alt="Гранд-Каньон.">
           </li>
-          <li>
-            <a class="button button list" href="#">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+          <li class="advantages-item-add">
+            <h3 class="advantages-title-add">Небольшая площадь</h3>
+            <p class="advantages-description-add">Все достопримечательности находятся очень близко</p>
           </li>
-        </ul>
-        <ul>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/hotel-1.jpg" width="300" height="211"
-                alt="Амара резорт и Спа.">
-              <h3 class="product-card-title">Amara Resort & Spa</h3>
-            </a>
-            <p class="hotel-type">Гостиница</p>
-            <p class="product-card-price">От 4000 Р</p>
-            <a class="product-card-button-button" href="#">Подробнее</a>
-            <a class="product-card-button-favourite" href="#">В избранное</a>
-            <img class="product-card-stars" src="images/catalog/rating-1.svg" width="140" height="37"
-              alt="Четыре звезды.">
-            <p class="rating">Рейтинг: 8,5</p>
+          <li class="advantages-item-road">
+            <h3 class="advantages-title-road">Красивая дорога</h3>
+            <p class="advantages-description-road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/hotel-2.jpg" width="300" height="211"
-                alt="Виллы в Поко Дьябло.">
-              <h3 class="product-card-title">Villas at Poco Diablo</h3>
-            </a>
-            <p>Гостиница</p>
-            <p class="product-card-price">От 5000 Р</p>
-            <a class="product-card-button-button" href="#">Подробнее</a>
-            <a class="product-card-button-green" href="#">В избранном</a>
-            <img class="product-card-stars" src="images/catalog/rating-1.svg" width="140" height="37"
-              alt="Четыре звезды.">
-            <p class="rating">Рейтинг: 9,2</p>
+          <li class="advantages-item-add">
+            <h3 class="advantages-title-add">Мало туристов</h3>
+            <p class="advantages-description-add">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li>
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/hotel-3.jpg" width="300" height="211"
-                alt="Дезерт Квейл Инн.">
-              <h3 class="product-card-title">Desert Quail Inn</h3>
-            </a>
-            <p>Гостиница</p>
-            <p class="product-card-price">От 2500 Р</p>
-            <a class="product-card-button-button" href="#">Подробнее</a>
-            <a class="product-card-button-favourite" href="#">В избранное</a>
-            <img class="product-card-stars" src="images/catalog/rating-3.svg" width="140" height="37" alt="Три звезды.">
-            <p class="rating">Рейтинг: 6,9</p>
-          </li>
-          <li>
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/hotel-4.jpg" width="300" height="211"
-                alt="ГриТри Инн.">
-              <h3 class="product-card-title">GreenTree Inn</h3>
-            </a>
-            <p>Гостиница</p>
-            <p class="product-card-price">От 4000 Р</p>
-            <a class="product-card-button-button" href="#">Подробнее</a>
-            <a class="product-card-button-favourite" href="#">В избранное</a>
-            <img class="product-card-stars" src="images/catalog/rating-4.svg" width="140" height="37" alt="Две звезды.">
-            <p class="rating">Рейтинг: 5,0</p>
-          </li>
-        </ul>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current" href="#">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-        <p class="select-results">Гостиниц на странице:</p>
-        <select class="select-control" aria-label="Число гостиниц">
-          <option value="four">4</option>
-          <option value="nine">9</option>
-          <option value="fifteen">15</option>
-        </select>
+        </ol>
       </section>
-      <section class="newsletter-catalog">
-        <h2 class="newsletter-catalog-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-catalog-description">Только полезная информация и никакого спама,
+      <section class="hotel-search">
+        <h2 class="hotel-search-heading">Заинтересовались?</h2>
+        <p class="hotel-search-description">Укажите предполагаемые даты поездки,
+          <br>и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <a class="hotel-button" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <section class="newsletter">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-description">Только полезная информация и никакого спама,
           <br>честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
